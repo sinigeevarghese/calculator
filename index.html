@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .calculator {
+     
+      margin: 0 auto;
+      padding: 30px;
+      background-color:gray;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+    <h1 class="text-center" >SIMPLE CALCULATOR</h1>
+  <div class="calculator" style="width: 20rem;">
+    <input type="text" id="result" class="form-control mb-2" readonly style="text-align: right;">
+    <div class="row mt-1">
+      <div class="col"><button class="btn btn-secondary"onclick="display(1)">1</button></div>
+      <div class="col"><button class="btn btn-secondary " onclick="display(2)">2</button></div>
+      <div class="col"><button class="btn btn-secondary "onclick="display(3)" >3</button></div>
+      <div class="col"><button class="btn btn-danger "onclick="ClearAll()" >AC</button></div>
+    </div>
+    <div class="row mt-1">
+      <div class="col"><button class="btn btn-secondary "onclick="display(4)" >4</button></div>
+      <div class="col"><button class="btn btn-secondary " onclick="display(5)">5</button></div>
+      <div class="col"><button class="btn btn-secondary "onclick="display(6)" >6</button></div>
+      <div class="col"><button class="btn btn-primary " onclick="display('+')">+</button></div>
+    </div>
+    <div class="row mt-1">
+      <div class="col"><button class="btn btn-secondary "onclick="display(7)" >7</button></div>
+      <div class="col"><button class="btn btn-secondary " onclick="display(8)">8</button></div>
+      <div class="col"><button class="btn btn-secondary "onclick="display(9)" >9</button></div>
+      <div class="col"><button class="btn btn-primary "onclick="display('-')" >-</button></div>
+    </div>
+    <div class="row mt-1">
+      <div class="col"><button class="btn btn-secondary " onclick="display(0)">0</button></div>
+      <div class="col"><button class="btn btn-primary "onclick="display('*')" >*</button></div>
+      <div class="col"><button class="btn btn-primary "onclick="display('/')" >/</button></div>
+      <div class="col"><button onclick="equal()" class="btn btn-success " >=</button></div>
+    </div>
+    <div>
+      <div class="col"><button onclick="back()" style="width: 14rem;" class="btn btn-success mt-2 " >back</button></div>
+    </div>
+  </div>
+
+  
+</body>
+<script src="./calcu.js"></script>
+</html>
